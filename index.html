@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>class</title>
+</head>
+
+<body class="mx-5">
+    <div class="alert my-5" id="alert">
+        <strong>Data not saved!</strong> Enter all the info as needed to submit your data.
+    </div>
+    <hr>
+    <form class="row g-3 my-3 " method="POST">
+        <div class="row g-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="firstName">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="lastName">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail">
+        </div>
+
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Enter Your Address">
+        </div>
+        <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity">
+        </div>
+
+        <div class="col-md-2">
+            <label for="inputZip" class="form-label">Pincode</label>
+            <input type="number" class="form-control" id="inputPin">
+        </div>
+
+
+        <div class="input-group mb-3 ">
+            <input type="file" class="form-control " id="inputFile">
+            <label class="input-group-text bg-primary text-white" for="inputFile">Upload</label>
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-text bg-primary text-white">Describe Yourself</span>
+            <textarea class="form-control" aria-label="With textarea" id="textArea"></textarea>
+        </div>
+        <hr>
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="dailyStuff" name="checkbox" value="1">
+                <label class="form-check-label" for="gridCheck">
+                    Daily Stuff
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="techStuff" name="checkbox" value=false>
+                <label class="form-check-label" for="gridCheck">
+                    Technical Stuff
+                </label>
+            </div>
+        </div>
+        <div id="tech">
+            <div class="mb-3">
+                <label for="codeLang" class="form-label">Language Learn</label>
+                <input type="text" class="form-control" id="codeLang"
+                    placeholder="Enter your favorite programming language">
+            </div>
+            <div class="mb-3">
+                <label for="codeExperience" class="form-label">Experience</label>
+                <input type="number" class="form-control" id="codeExperience" placeholder="Enter your experience">
+            </div>
+
+        </div>
+        <hr>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>
